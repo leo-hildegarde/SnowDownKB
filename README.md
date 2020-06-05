@@ -2,7 +2,7 @@
 Simple script to download public KBs in ITSM Tool named Service Now. It will create files with the KB number if the KB is visible.
 
 You can change the KB number in line 2:
-        for i in $(seq -f "%07g" 1 20000) # change the 1 20000 if you want to go for a different range
+        for i in $(seq -f "%07g" 1 20000) # change the 1 20000 if you want to go for a different range.
 
 You will need to edit the Instance Name prior to launch the script. Or you can add a variable and load it based in a parameter.
 
