@@ -2,7 +2,7 @@
 for i in $(seq -f "%07g" 1 20000)
 do
 	url="https://[replaceWithInstanceName].service-now.com/kb_view_customer.do?sysparm_article=KB"$i
-	fichero="KB"$i
+	file001="KB"$i
 	wget -q -O $file001 $url
 	if grep --quiet "Published" $file001
 	then
